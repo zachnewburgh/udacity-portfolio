@@ -4,42 +4,46 @@
   font-weight: 400;
 }
 
-header {
+#container {
   display: flex;
-  align-items: center;
-  border-bottom: 5px solid #7d97ad; 
-  padding-bottom: 2%;
+  flex-direction: column;
 }
 
-header div {
+header {
   flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 1%;
+  border-bottom: 5px solid #7d97ad;
 }
 
 #logo {
+  flex: 1;
   max-width: 1.5em;
+  margin: auto;
 }
 
 #info {
+  flex: 1;
   text-align: right;
 }
 
-header h1 {
+#info h1 {
   margin: 0;
   font-size: 1em;
   font-weight: 200;
 }
 
-header h2 {
+#info h2 {
   font-size: 0.75em;
   font-weight: 400;
   margin: 0;
 }
 
-#featured-work h3 {
-  color: #7d97ad;
-  font-size: 1em;
-  font-weight: 300;
-  text-align: center;
+img {
+  flex: 1;
+  align-self: center;
+  max-width: 100%;
 }
 
 #projects {
@@ -48,9 +52,23 @@ header h2 {
 }
 
 #projects h3 {
-  margin: 0;
+  color: #7d97ad;
+  font-size: 1em;
+  font-weight: 300;
+  text-align: center;
+}
+
+#articles-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#projects article h3 {
+  color: #2d3c49;
   font-size: 1em;
   font-weight: 400;
+  margin: 0;
 }
 
 @media screen and (min-width: 435px) {
@@ -58,19 +76,19 @@ header h2 {
     max-width: 2em;
   }
 
-  header h1 {
+  #info h1 {
     font-size: 1.5em;
   }
 
-  header h2 {
+  #info h2 {
     font-size: 0.95em;
   }
 
-  #featured-work h3 {
+  #projects h3 {
     font-size: 1.5em;
   }
 
-  #projects h3 {
+  article h3 {
     font-size: 1.25em;
   }
 }
@@ -80,19 +98,19 @@ header h2 {
     max-width: 2.5em;
   }
 
-  header h1 {
+  #info h1 {
     font-size: 2em;
   }
 
-  header h2 {
+  #info h2 {
     font-size: 1.15em;
   }
 
-  #featured-work h3 {
+  #projects h3 {
     font-size: 2em;
   }
 
-  #projects h3 {
+  article h3 {
     font-size: 1.5em;
   }
 }
@@ -102,19 +120,19 @@ header h2 {
     max-width: 3em;
   }
 
-  header h1 {
+  #info h1 {
     font-size: 2.5em;
   }
 
-  header h2 {
+  #info h2 {
     font-size: 1.25em;
   }
 
-  #featured-work h3 {
+  #projects h3 {
     font-size: 2.25em;
   }
 
-  #projects h3 {
+  article h3 {
     font-size: 1.75em;
   }
 }
@@ -124,7 +142,7 @@ header h2 {
     max-width: 3.5em;
   }
 
-  header h1 {
+  #info h1 {
     font-size: 3em;
   }
 }
@@ -134,53 +152,27 @@ header h2 {
     max-width: 4em;
   }
 
-  header h1 {
+  #info h1 {
     font-size: 3.5em;
   }
 
-  #featured-work h3 {
+  #projects h3 {
     font-size: 2.5em;
     text-align: left;
   }
 
-  #projects {
+  #articles-container {
     flex-direction: row;
-
   }
 
-  #projects h3 {
+  article {
+    flex: 1;
+  }
+
+  #projects article h3 {
     font-size: 2em;
+    text-align: center;
+    margin: 0;
   }
-}
 
-figure {
-  display: flex;
-  align-items: center;
-  margin: 2.5% 0 0 0;
-}
-
-#main {
-  flex: 1;
-  text-align: center;
-  max-width: 100%;
-}
-
-#projects div {
-  flex: 1;
-  text-align: center;
-}
-
-#projects picture {
-  padding: 3%;
-}
-
-#projects source, #projects img {
-  flex: 1;
-  text-align: center;
-  max-width: 100%;
-  padding-bottom: 3%;
-}
-
-#projects div {
-  padding-bottom: 3%;
 }

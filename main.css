@@ -1,6 +1,6 @@
 * {
   color: #2d3c49;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-weight: 400;
 }
 
@@ -15,11 +15,11 @@ header div {
   flex: 1;
 }
 
-header div#logo {
+#logo {
   max-width: 1.5em;
 }
 
-header div#info {
+#info {
   text-align: right;
 }
 
@@ -42,19 +42,19 @@ header h2 {
   text-align: center;
 }
 
-div#projects {
+#projects {
   display: flex;
   flex-direction: column;
 }
 
-div#projects h3 {
+#projects h3 {
   margin: 0;
   font-size: 1em;
   font-weight: 400;
 }
 
 @media screen and (min-width: 435px) {
-  header div#logo {
+  #logo {
     max-width: 2em;
   }
 
@@ -70,13 +70,13 @@ div#projects h3 {
     font-size: 1.5em;
   }
 
-  div#projects h3 {
+  #projects h3 {
     font-size: 1.25em;
   }
 }
 
 @media screen and (min-width: 575px) {
-  header div#logo {
+  #logo {
     max-width: 2.5em;
   }
 
@@ -92,13 +92,13 @@ div#projects h3 {
     font-size: 2em;
   }
 
-  div#projects h3 {
+  #projects h3 {
     font-size: 1.5em;
   }
 }
 
 @media screen and (min-width: 715px) {
-  header div#logo {
+  #logo {
     max-width: 3em;
   }
 
@@ -114,13 +114,13 @@ div#projects h3 {
     font-size: 2.25em;
   }
 
-  div#projects h3 {
+  #projects h3 {
     font-size: 1.75em;
   }
 }
 
 @media screen and (min-width: 855px) {
-  header div#logo {
+  #logo {
     max-width: 3.5em;
   }
 
@@ -130,7 +130,7 @@ div#projects h3 {
 }
 
 @media screen and (min-width: 995px) {
-  header div#logo {
+  #logo {
     max-width: 4em;
   }
 
@@ -143,12 +143,12 @@ div#projects h3 {
     text-align: left;
   }
 
-  div#projects {
+  #projects {
     flex-direction: row;
 
   }
 
-  div#projects h3 {
+  #projects h3 {
     font-size: 2em;
   }
 }
@@ -159,28 +159,28 @@ figure {
   margin: 2.5% 0 0 0;
 }
 
-img#main {
+#main {
   flex: 1;
   text-align: center;
   max-width: 100%;
 }
 
-div#projects div {
+#projects div {
   flex: 1;
   text-align: center;
 }
 
-div#projects picture {
+#projects picture {
   padding: 3%;
 }
 
-div#projects source, div#projects img {
+#projects source, #projects img {
   flex: 1;
   text-align: center;
   max-width: 100%;
   padding-bottom: 3%;
 }
 
-div#projects div {
+#projects div {
   padding-bottom: 3%;
 }

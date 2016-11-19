@@ -170,12 +170,17 @@ div#projects div {
   text-align: center;
 }
 
-div#projects figure {
+div#projects picture {
   padding: 3%;
 }
 
-div#projects img {
+div#projects source, div#projects img {
   flex: 1;
   text-align: center;
   max-width: 100%;
+  padding-bottom: 3%;
+}
+
+div#projects div {
+  padding-bottom: 3%;
 }
